@@ -16,7 +16,7 @@ def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-CONTACT_ANIM_PATH = r"D:\ITM\Data_Analysis\infosys springboard Project\website\my_portfolio\assets\Contact Us Character Animation.json"
+CONTACT_ANIM_PATH = "assets/Contact_Us_Character_Animation.json"
 lottie_contact = load_lottiefile(CONTACT_ANIM_PATH)
 
 # ----------------------------
