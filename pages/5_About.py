@@ -101,9 +101,7 @@ def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-lottie_talking = load_lottiefile(
-    r"D:\ITM\Data_Analysis\infosys springboard Project\website\my_portfolio\assets\Talking Character.json"
-)
+lottie_talking = load_lottiefile("assets/Talking_Character.json")
 
 # ----------------------------
 # Page Title + Divider + Animation
