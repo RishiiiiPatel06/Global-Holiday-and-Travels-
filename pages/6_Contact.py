@@ -167,9 +167,10 @@ if st.button("Submit"):
             conn = get_connection()
             cur = conn.cursor()
             cur.execute("""
-                INSERT INTO contacts (full_name, contact_number, email_id, linkedin_account, github_account, message)
+                INSERT INTO contacts (full_name, contact_number, email, linkedin_account, github_account, message)
                 VALUES (%s, %s, %s, %s, %s, %s)
-            """, (full_name, contact_number, email_id, linkedin_account, github_account, message))
+                """, (full_name, contact_number, email_id, linkedin_account, github_account, message))
+
             conn.commit()
             cur.close()
             conn.close()
