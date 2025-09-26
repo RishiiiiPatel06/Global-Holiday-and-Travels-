@@ -1,5 +1,6 @@
 import streamlit as st
 import json
+import os
 from streamlit_lottie import st_lottie
 
 # ----------------------------
@@ -12,14 +13,13 @@ if "authenticated" not in st.session_state or not st.session_state["authenticate
 # ----------------------------
 # --- Helper function to load Lottie animations ---
 # ----------------------------
+
 def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-# Load World Tour animation
-lottie_world = load_lottiefile(
-    r"D:\ITM\Data_Analysis\infosys springboard Project\website\my_portfolio\assets\world Tour.json"
-)
+# Use relative path (works both locally & on Streamlit Cloud)
+lottie_world = load_lottiefile("assets/world Tour.json")
 
 # ----------------------------
 # CSS Styling for Theme + Animations + Advanced Features
