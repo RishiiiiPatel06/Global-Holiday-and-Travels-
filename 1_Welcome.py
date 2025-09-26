@@ -14,7 +14,7 @@ def load_lottiefile(filepath: str):
 # Paths
 LOGIN_PATH = "assets/Login.json"
 WELCOME_PATH = "assets/Welcome.json"
-ACCOUNT_CREATED_PATH = "assets/Account Created.json"
+ACCOUNT_CREATED_PATH = "assets/Account_Created.json"
 
 # Load Animations
 lottie_login = load_lottiefile(LOGIN_PATH)
