@@ -75,9 +75,8 @@ def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-lottie_animation = load_lottiefile(
-    "D:/ITM/Data_Analysis/infosys springboard Project/website/my_portfolio/assets/Rating Character Animation.json"
-)
+lottie_animation = load_lottiefile("assets/Rating_Character_Animation.json")
+
 st_lottie(lottie_animation, speed=1, loop=True, quality="high", height=300, key="ratingAnim")
 
 st.markdown('<h4 style="text-align:center;">We value your feedback!</h4>', unsafe_allow_html=True)
