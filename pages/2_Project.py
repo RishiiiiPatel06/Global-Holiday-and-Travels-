@@ -19,7 +19,7 @@ def load_lottiefile(filepath: str):
         return json.load(f)
 
 # Use relative path (works both locally & on Streamlit Cloud)
-lottie_world = load_lottiefile("assets/world Tour.json")
+lottie_world = load_lottiefile("assets/world_Tour.json")
 
 # ----------------------------
 # CSS Styling for Theme + Animations + Advanced Features
