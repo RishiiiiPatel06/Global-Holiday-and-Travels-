@@ -12,9 +12,9 @@ def load_lottiefile(filepath: str):
         return json.load(f)
 
 # Paths
-LOGIN_PATH = r"D:\ITM\Data_Analysis\infosys springboard Project\website\my_portfolio\assets\Login.json"
-WELCOME_PATH = r"D:\ITM\Data_Analysis\infosys springboard Project\website\my_portfolio\assets\Welcome.json"
-ACCOUNT_CREATED_PATH = r"D:\ITM\Data_Analysis\infosys springboard Project\website\my_portfolio\assets\Account Created.json"
+LOGIN_PATH = "assets/Login.json"
+WELCOME_PATH = "assets/Welcome.json"
+ACCOUNT_CREATED_PATH = "assets/Account Created.json"
 
 # Load Animations
 lottie_login = load_lottiefile(LOGIN_PATH)
