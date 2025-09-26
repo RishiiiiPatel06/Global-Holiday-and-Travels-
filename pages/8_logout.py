@@ -9,7 +9,7 @@ def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-THANKYOU_PATH = r"D:\ITM\Data_Analysis\infosys springboard Project\website\my_portfolio\assets\Thank You.json"
+THANKYOU_PATH = "assets/Thank_You.json"
 lottie_thankyou = load_lottiefile(THANKYOU_PATH)
 
 # --- Access Control ---
