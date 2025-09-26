@@ -1,0 +1,15 @@
+[theme]
+# Main accent color (matches your dashboard highlights)
+primaryColor="#00B8A9"               # teal-blue accent
+
+# Main page background (dark gray)
+backgroundColor="#1E1E1E"            # very dark gray background
+
+# Sidebar / card background (medium gray)
+secondaryBackgroundColor="#2B2B2B"   # slightly lighter gray for panels
+
+# Text color (white for contrast)
+textColor="#E0E0E0"                   # soft white text
+
+# Font
+font="sans serif"
