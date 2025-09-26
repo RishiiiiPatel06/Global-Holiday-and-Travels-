@@ -112,9 +112,10 @@ if st.button("Submit"):
             conn = get_connection()
             cur = conn.cursor()
             cur.execute("""
-                INSERT INTO feedbacks (name, email_id, feedback, rating)
+                INSERT INTO feedbacks (name, email, feedback, rating)
                 VALUES (%s, %s, %s, %s)
-            """, (name, email_id, feedback, rating))
+                """, (name, email_id, feedback, rating))
+
             conn.commit()
             cur.close()
             conn.close()
