@@ -39,23 +39,6 @@ Currently under development — core modules will be implemented progressively.
 
 ---
 
-## Project Structure
-Global-Holiday-and-Travels-
-│
-├── client/ # React Frontend
-│ └── src/
-│
-├── server/ # Node.js Backend
-│ ├── routes/
-│ ├── controllers/
-│ └── services/
-│
-├── docs/ # Technical documentation / diagrams
-├── data/ # Sample holiday data
-└── README.md
-
-
-
 License
 
 MIT License
